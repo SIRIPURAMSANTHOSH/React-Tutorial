@@ -21,6 +21,13 @@ const About = () => (
     </div>
 );
 
+const Contact = () => (
+    <div>
+        <h2>Contact Us</h2>
+        <p>Feel free to reach out to us with any questions or feedback.</p>
+    </div>
+);
+
 const Header = () => <header><h2>This is the Header</h2></header>;
 
 function App() {
@@ -32,6 +39,7 @@ function App() {
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/about">About</Link></li>
                         <li><Link to="/state-example">State Example</Link></li>
+                        <li><Link to="/Contact">Contact</Link></li>
                     </ul>
                 </nav>
 
@@ -55,6 +63,12 @@ function App() {
                             
                         </div>
                     } />
+                     <Route path="/Contact" element={
+                        <div>
+                            <Contact/>
+                            <Footer2/> 
+                        </div>
+                    }/> 
                 </Routes>
                 
             </div>
